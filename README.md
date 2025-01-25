@@ -1,1 +1,1 @@
-# Ročníkový projekt na WT
+# Generátor e-shopů

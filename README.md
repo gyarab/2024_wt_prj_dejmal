@@ -1,1 +1,1 @@
-# Generátor e-shopů
+# Reuel Dejmal - generátor e-shopů

@@ -8,19 +8,22 @@ Do takto vygenerovaného e-shopu může uživatel přidat kategorie zboží, sou
 ## Z programátorského pohledu (popis jednotlivých datových objektů):
 
 ### Uživatel generátoru
-
+Atributy:
+- Jméno
+- Hash hesla
+- E-shop
+- 
 
 ### Objednávka e-shopu
 Atributy:
 - Uživatel
-- Všechny parametry e-shopu: viz uživatelský pohled
+- Všechny parametry e-shopu
 
 ### Globální styl grafiky
-
+Zatím nevím.
 
 ### Grafika jednotlivých e-shopových obrazovek
 Zatím nevím.
-
 
 ### E-shop
 Atributy: viz uživatelský pohled
@@ -35,13 +38,30 @@ Atributy:
 
 ### Kategorie
 Atributy:
-
+- Název
+- Seznam parametrů
+- Seznam podkategorií
+- Seznam nadkategoríí
+- Seznam zboží
 
 ### Parametr
+Atributy:
+- Název
+- Typ hodnoty
+- Hodnota
 
-
-### Položka
-
-
+### Položka (zboží)
+Atributy:
+- Název
+- Seznam kategorií
+- Cena
+- Seznam množstevních slev
+- Sezam parametrů
+- Popis
 
 ### Uživatel e-shopu
+- Uživatelské jméno
+- Hash hesla
+- Seznam zboží v košíku
+- Historie objednávek
+- 

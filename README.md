@@ -10,10 +10,9 @@ Do takto vygenerovaného e-shopu může uživatel přidat kategorie zboží, sou
 ### Uživatel generátoru
 
 
-### Objednávka e-shop
+### Objednávka e-shopu
 Atributy:
 - Uživatel
-- 
 - Všechny parametry e-shopu: viz uživatelský pohled
 
 ### Globální styl grafiky
@@ -24,7 +23,7 @@ Zatím nevím.
 
 
 ### E-shop
-
+Atributy: viz uživatelský pohled
 
 ### Objdnávka zboží z e-shopu
 Atributy:

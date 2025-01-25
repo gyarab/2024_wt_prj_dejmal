@@ -6,11 +6,15 @@ Při objednávce e-shopu uživatel nejprve určí, na jak dlouho e-shop zatím o
 Do takto vygenerovaného e-shopu může uživatel přidat kategorie zboží, součástí každé kategorie budou i možnosti parametrů, podle kterých bude možné zboží filtrovat nebo i řadit. Poté půjde přidat zboží do jednotlivých kategorií. Dále může do e-shopu přidávat slevové programy.
 
 ## Z programátorského pohledu (popis jednotlivých datových objektů):
+
 ### Uživatel generátoru
 
 
-### Objednávka e-shopu
-Atributy: viz uživatelský pohled
+### Objednávka e-shop
+Atributy:
+- Uživatel
+- 
+- Všechny parametry e-shopu: viz uživatelský pohled
 
 ### Globální styl grafiky
 
@@ -24,11 +28,11 @@ Zatím nevím.
 
 ### Objdnávka zboží z e-shopu
 Atributy:
-- seznam zboží
-- seznam použitých slevových programů
-- způsob dopravy
-- místo doručení
-- uživatel
+- Seznam zboží
+- Seznam použitých slevových programů
+- Způsob dopravy
+- Místo doručení
+- Uživatel
 
 ### Kategorie
 Atributy:

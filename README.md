@@ -62,6 +62,7 @@ Atributy:
 - Popis
 
 ### Uživatel e-shopu
+Atributy:
 - Uživatelské jméno
 - Hash hesla
 - Seznam zboží v košíku

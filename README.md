@@ -18,7 +18,7 @@ Do takto vygenerovaného e-shopu může uživatel přidat kategorie zboží, sou
 ### Grafika jednotlivých e-shopových obrazovek
 
 
-### E-shop:
+### E-shop
 
 
 ### Kategorie

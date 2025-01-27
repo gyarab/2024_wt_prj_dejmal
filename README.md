@@ -84,3 +84,4 @@ Atributy:
 ![](overeni_emailu-desktop.jpeg)
 ![](overeni_emailu-mobile.jpeg)
 ![](pridat_upr_kateg-mobile-okno.jpeg)
+![](nastaveni-eshopu-mobile.jpeg)

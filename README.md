@@ -1,5 +1,5 @@
 # Reuel Dejmal - generátor e-shopů
-Nejprve vysvětlím, jak bude software vypadat z uživatelského hlediska a poté z programátorského hlediska.
+Jako svůj ročníkový projekt naprogramuji software, který bude generovat e-shopy. Nejprve vysvětlím, jak bude software vypadat z uživatelského hlediska a poté z programátorského hlediska.
 
 ## Z uživatelského pohledu:
 Při objednávce e-shopu uživatel nejprve určí, na jak dlouho e-shop zatím objednává a platí. V dalším kroku základní parametry e-shopu, jako jsou možnosti dopravy, ceny těchto možností a styl grafiky, který bude společný pro celý e-shop. Pokud uživatel nebude chtít vytvářet vlastní grafiku, bude moci využít šablonu. Tu může buď použít tak, jak je, nebo si ji upravit podle svých potřeb. Poté může upravit jednotlivé obrazovky e-shopu, které generátor automaticky vygeneruje podle globálního stylu grafiky. Pří posledním kroku uživatel objednávku zaplatí.
@@ -30,7 +30,7 @@ Atributy:
 - Seznam uživatelů
 - Další: viz uživatelský pohled
 
-### Objdnávka zboží z e-shopu
+### Objednávka zboží z e-shopu
 Atributy:
 - Seznam zboží
 - Seznam použitých slevových programů
@@ -80,8 +80,8 @@ Atributy:
 ![](administrace-desktop.jpeg)
 ![](pridat_upr_kateg-mobile-okno.jpeg)
 ![](pridat_upr_kateg-desktop-okno.jpeg)
-![](pridat_upr_zbozi-desktop-okno.jpeg)
 ![](pridat_upr_zbozi-mobile-okno.jpeg)
+![](pridat_upr_zbozi-desktop-okno.jpeg)
 ![](nastaveni_eshopu-desktop.jpeg)
 ![](nastaveni_eshopu-mobile.jpeg)
 ![](obnoveni_hesla-mobile.jpeg)

@@ -75,6 +75,7 @@ Atributy:
 ![](prhl_reg-mobile.jpeg)
 ![](prihl_reg-desktop.jpeg)
 ![](novy_eshop-mobile.jpeg)
+![](novy_eshop-desktop.jpeg)
 ![](administrace-desktop.jpeg)
 ![](nastaveni_eshopu-desktop.jpeg)
 ![](obnoveni_hesla-desktop.jpeg)
@@ -83,5 +84,3 @@ Atributy:
 ![](overeni_emailu-desktop.jpeg)
 ![](overeni_emailu-mobile.jpeg)
 ![](pridat_upr_kateg-mobile-okno.jpeg)
-![](pridat_upr_zbozi-mobile-okno.jpeg)
-![](pridat_upr_zbozi-moble-okno.jpeg)

@@ -70,7 +70,7 @@ Atributy:
 - Seznam aktuálních slevových programů
 
 ## Wireframy
-![administrace-desktop.jpeg]
+![](administrace-desktop.jpeg)
 nastaveni_eshopu-desktop.jpeg
 novy_eshop-mobile.jpeg
 obnoveni_hesla-desktop.jpeg

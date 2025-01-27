@@ -70,18 +70,18 @@ Atributy:
 - Seznam aktuálních slevových programů
 
 ## Wireframy
+![](uvod-mobile.jpeg)
+![](uvod-desktop.jpeg)
+![](prhl_reg-mobile.jpeg)
+![](prihl_reg-desktop.jpeg)
+![](novy_eshop-mobile.jpeg)
 ![](administrace-desktop.jpeg)
 ![](nastaveni_eshopu-desktop.jpeg)
-![](novy_eshop-mobile.jpeg)
 ![](obnoveni_hesla-desktop.jpeg)
 ![](obnoveni_hesla-mobiile.jpeg)
 ![](obnoveni_hesla-okno.jpeg)
 ![](overeni_emailu-desktop.jpeg)
 ![](overeni_emailu-mobile.jpeg)
-![](prhl_reg-mobile.jpeg)
 ![](pridat_upr_kateg-mobile-okno.jpeg)
 ![](pridat_upr_zbozi-mobile-okno.jpeg)
 ![](pridat_upr_zbozi-moble-okno.jpeg)
-![](prihl_reg-desktop.jpeg)
-![](uvod-desktop.jpeg)
-![](uvod-mobile.jpeg)

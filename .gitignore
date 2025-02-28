@@ -1,0 +1,8 @@
+*.pyc
+venv/
+!venv/requirements.txt
+!venv/bin/pi
+!venv/bin/py
+!venv/bin/pir
+!venv/bin/activate
+

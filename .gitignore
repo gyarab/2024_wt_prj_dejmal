@@ -1,5 +1,7 @@
 *.pyc
 prj/db.aqlite3
 venv/*
+!venv/bin
+venv/bin/*
 !venv/bin/ractivate
 

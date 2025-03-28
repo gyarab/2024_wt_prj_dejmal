@@ -6,8 +6,10 @@ echo "source \$VIRTUAL_ENV/bin/ractivate" >> venv/bin/activate
 
 aaa() {
     source $hm/venv/bin/activate
+    unset apir
 }
 apir() {
     aaa
     pir
+    unset apir
 }

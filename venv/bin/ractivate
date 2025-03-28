@@ -34,8 +34,32 @@ mkmigrm() {
 
 da () {
     deactivate
+    unset p3
+    unset pi
+    unset pir
+    unset py
 }
 
 aaa() {
     source $vnvbin/activate
+}
+
+p3() {
+    pip3 $*
+}
+pi() {
+    pip3 install $*
+}
+pir() {
+    pip3 -r $hm/requirements.txt
+}
+py() {
+    python3 $*
+}
+
+gta() {
+    git add $*
+}
+gtaa() {
+    gta -A
 }

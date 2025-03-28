@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+export hm=`pwd`
+python3 -m venv venv
+echo "" >> venv/bin/activate
+echo "source \$VIRTUAL_ENV/bin/ractivate" >> venv/bin/activate
+
+aaa() {
+    source $hm/venv/bin/activate
+}
+apir() {
+    aaa
+    pir
+}

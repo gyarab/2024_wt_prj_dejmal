@@ -14,49 +14,49 @@ modely = __all__[:-1]
 
 # Uživatel generátoru
 class GeneratorUser(models.Model):
-    name = CharField(max_length=255, unique=True)
-    password_hash = CharField(max_length=255)
+    name = models.Models.CharField(max_length=255, unique=True)
+    password_hash = models.CharField(max_length=255)
 
 
 # E-shop
-class EShop(Model):
-    creator = ForeignKey(GeneratorUser, on_delete=CASCADE)
-    users = ManyToManyField(GeneratorUser, related_name="eshop_users")
+class EShop(models.Model):
+    creator = models.ForeignKey(GeneratorUser, on_delete=CASCADE)
+    users = models.ManyToManyField(GeneratorUser, related_name="eshop_users")
 
 # Objednávka z e-shopu
-class Order(Model):
-    user = ForeignKey(GeneratorUser, on_delete=CASCADE)
-    items = ManyToManyField("Item")
-    discount_programs = ManyToManyField("DiscountProgram", blank=True)
-    delivery_method = CharField(max_length=255)
-    delivery_location = CharField(max_length=255)
+class Order(models.Model):
+    user = models.ForeignKey(GeneratorUser, on_delete=CASCADE)
+    items = models.ManyToManyField("Item")
+    discount_programs = models.ManyToManyField("DiscountProgram", blank=True)
+    delivery_method = models.CharField(max_length=255)
+    delivery_location = models.CharField(max_length=255)
 
 # Kategorie
-class Category(Model):
-    name = CharField(max_length=255)
-    parameters = ManyToManyField("Parameter", blank=True)
-    subcategories = ManyToManyField("self", symmetrical=False, related_name="parent_categories", blank=True)
-    items = ManyToManyField("Item", blank=True)
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+    parameters = models.ManyToManyField("Parameter", blank=True)
+    subcategories = models.ManyToManyField("self", symmetrical=False, related_name="parent_categories", blank=True)
+    items = models.ManyToManyField("Item", blank=True)
 
 # Parametr
-class Parameter(Model):
-    name = CharField(max_length=255)
-    value_type = CharField(max_length=255)
-    value = TextField()
+class Parameter(models.Model):
+    name = models.CharField(max_length=255)
+    value_type = models.CharField(max_length=255)
+    value = models.TextField()
 
 # Položka (zboží)
-class Item(Model):
-    name = CharField(max_length=255)
-    categories = ManyToManyField(Category)
-    price = DecimalField(max_digits=10, decimal_places=2)
-    quantity_discounts = TextField(null=True, blank=True)
-    parameters = ManyToManyField(Parameter, blank=True)
-    description = TextField()
+class Item(models.Model):
+    name = models.CharField(max_length=255)
+    categories = models.ManyToManyField(Category)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    quantity_discounts = models.TextField(null=True, blank=True)
+    parameters = models.ManyToManyField(Parameter, blank=True)
+    description = models.TextField()
 
 # Uživatel e-shopu
-class EShopUser(Model):
-    username = CharField(max_length=255, unique=True)
-    password_hash = CharField(max_length=255)
-    cart_items = ManyToManyField(Item, blank=True)
-    order_history = ManyToManyField(Order, blank=True)
-    active_discounts = ManyToManyField("DiscountProgram", blank=True)
+class EShopUser(models.Model):
+    username = models.CharField(max_length=255, unique=True)
+    password_hash = models.CharField(max_length=255)
+    cart_items = models.ManyToManyField(Item, blank=True)
+    order_history = models.ManyToManyField(Order, blank=True)
+    active_discounts = models.ManyToManyField("DiscountProgram", blank=True)

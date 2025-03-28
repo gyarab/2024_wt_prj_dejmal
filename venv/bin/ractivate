@@ -63,3 +63,10 @@ gta() {
 gtaa() {
     gta -A
 }
+
+gcomi() {
+    git commit
+}
+gpush() {
+    git push $*
+}

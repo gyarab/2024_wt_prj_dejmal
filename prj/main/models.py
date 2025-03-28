@@ -14,18 +14,18 @@ modely = __all__[:-1]
 
 # Uživatel generátoru
 class GeneratorUser(models.Model):
-    name = models.Models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255, unique=True)
     password_hash = models.CharField(max_length=255)
 
 
 # E-shop
 class EShop(models.Model):
-    creator = models.ForeignKey(GeneratorUser, on_delete=CASCADE)
+    creator = models.ForeignKey(GeneratorUser, on_delete=models.CASCADE)
     users = models.ManyToManyField(GeneratorUser, related_name="eshop_users")
 
 # Objednávka z e-shopu
 class Order(models.Model):
-    user = models.ForeignKey(GeneratorUser, on_delete=CASCADE)
+    user = models.ForeignKey(GeneratorUser, on_delete=models.CASCADE)
     items = models.ManyToManyField("Item")
     discount_programs = models.ManyToManyField("DiscountProgram", blank=True)
     delivery_method = models.CharField(max_length=255)

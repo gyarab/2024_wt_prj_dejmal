@@ -1,5 +1,6 @@
 *.pyc
 prj/db.sqlite3
+a
 venv/*
 !venv/bin
 venv/bin/*

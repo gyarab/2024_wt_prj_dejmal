@@ -7,10 +7,8 @@ __all__ = [
     "Category",
     "Parameter",
     "Item",
-    "EShopUser",
-    "modely"
+    "EShopUser"
 ]
-modely = __all__[:-1]
 
 # Uživatel generátoru
 class GeneratorUser(models.Model):

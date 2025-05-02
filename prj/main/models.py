@@ -7,8 +7,28 @@ __all__ = [
     "Category",
     "Parameter",
     "Item",
-    "EShopUser"
+    "EShopUser",
+    "DiscountProgram",
+    "DiscountProgramCondition"
 ]
+
+
+class Predek(models.Model):
+    def __str__(self):
+        return repr(self)
+    def __repr__(self):
+        string = "<" + type(self).__name__
+        if hasattr(self, "_shown_attrs"):
+            string += ":"
+            
+            if hasattr(self, "_show_id") and self._show_id:
+                string += "id=" + repr(self)
+            
+            for attr in self._shown_attrs:
+                string += " " + attr + "=" + repr(getattr(self, attr))
+        
+        return string + ">"
+
 
 # Uživatel generátoru
 class GeneratorUser(models.Model):
@@ -58,3 +78,16 @@ class EShopUser(models.Model):
     cart_items = models.ManyToManyField(Item, blank=True)
     order_history = models.ManyToManyField(Order, blank=True)
     active_discounts = models.ManyToManyField("DiscountProgram", blank=True)
+
+class DiscountProgramCondition(models.Model):
+    discount_program = models.ForeignKey('DiscountProgram', on_delete=models.CASCADE, related_name="conditions")
+    min_total_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    required_categories = models.ManyToManyField(Category, blank=True)
+    required_items = models.ManyToManyField(Item, blank=True)
+    min_quantity = models.PositiveIntegerField(blank=True)
+
+class DiscountProgram(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField(blank=True)
+    discount_percent = models.DecimalField(max_digits=5, decimal_places=2)
+    conditions = models.ForeignKey(DiscountProgramCondition, on_delete=models.CASCADE)

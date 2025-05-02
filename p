@@ -7,8 +7,8 @@ addkey() {
     ssh-add $1
 }
 
-addkgh() {
-    addkey $HOME/.ssh/gh
+addkmm() {
+    addkey mmm
 }
 
 mng() {
@@ -70,4 +70,3 @@ gcomi() {
 gpush() {
     git push $*
 }
-
